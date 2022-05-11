@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;;
+}
+/*-----------------NAV--------------------*/
+nav{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 25px;
+}
+/*--------------------PROFILE---------------------*/
+.profile{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+    
+}
+.profile h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #222222;
+
+}
+.profile h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: #423f40;
+    
+
+}
+.photo-profile{
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+}
+.photo-profile img{
+    max-width: 100%
+    
+}
+
+.icons{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+
+
+}
+.icons span{
+    padding: 8px;
+    background-color: #8B7BEF;
+    border: #ffff solid 1px;
+    border-radius: 50%;
+    align-items: center;
+    
+}
+
+.contact{
+    width: 90%;
+    display: flex;
+    background-color: #5d3bef;
+    margin-top: 20px;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+.contact img{
+    width: 25px;
+    margin-right: 30px;
+}
+.contact h2{
+    color: #ffff;
+    font-size: 16px;
+}
+
+/*----------ABOUT ME----------*/
+.about-me{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    justify-content: center;
+    margin: 80px auto ;
+}
+.about-me h2{
+    color: #222222;
+    font-size: 24px;
+    font-weight: 600;
+}
+.about-me p{
+    color: #423f40;
+    font-size: 16px;
+    margin-top: 20px;
+    align-items: center;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/*----------MY SKILLS-----------*/
+
+.my-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+    overflow-x: scroll;
+}
+.my-skills h2{
+    color: #222222;
+}
+.skills-container h3{
+    color: #222222;
+}
+
+.skills-container p{
+    color: #423f40;
+}
+
+.skills{
+    margin-top: 30px;
+    background-color: #f9f6ff ;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 20px;
+}
+
+/*==============EXPERIENCE==============*/
+.experience{
+    width: 85%;
+    text-align: center;
+    margin: 0% auto;
+    margin-top: 90px;
+
+}
+.experience-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: justify;
+}
+.experience-text h3,span{
+    font-size: 16px;
+}
+.experience-text p{
+    font-size: 12px;
+}
+.experience-item img{
+    width: 25%;
+}
+.experience-item span{
+    align-self: center;
+}
+
+/*===================PORTFOLIO===============*/
+.portfolio{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0% auto;
+    margin-top: 80px;
+   
+}
+.portfolio h2{
+    color: #222222;
+}
+.portfolio-img div{
+    padding-top: 20px;
+}
+.portfolio-img img{
+    max-width: 100%;
+}
+.img-2{
+    display: flex;
+    width: 50%;
+}
+
+/*==================FOOTER====================*/
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: 0% auto;
+    margin-top: 80px;
+
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.footer div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    
+}
+
+.footer div h3{
+    font-size: 16px;
+    color: #222222;
+}
+.footer div p{
+    font-size: 12px;
+    color: #423f40;
+}
+
+
+.footer span{
+    background-color: #f9f5f2;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+
+.bye{
+    color: #8B7BEF;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px;
+}
