@@ -9,108 +9,181 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <title>My portfolio</title>
+    <script src="https://kit.fontawesome.com/e3cd5556f0.js" crossorigin="anonymous"></script>
+    <title>Nilson Diaz</title>
 </head>
 
 <body>
     <!---------------HEADER-------------->
     <header>
-        <nav>
-            <img src="./Portafolio 6/menu 1.svg" alt="Menu">
-        </nav>
+        <!-----------MENU-------------->
+        <div class="menu-container">
+            <div class="menu">
+                <span onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+
+
+            <nav id="main-menu" class="hidden">
+                <ul>
+                    <a href="#home">
+                        <li><i class="fas fa-home"></i>Home</li>
+                    </a>
+                    <a href="#about">
+                        <li><i class="fas fa-user"></i>About me</li>
+                    </a>
+                    <a href="#skills">
+                        <li><i class="fas fa-laptop-code"></i>My skills</li>
+                    </a>
+                    <a href="#experience">
+                        <li><i class="fas fa-code"></i>Experience</li>
+                    </a>
+                    <a href="#portfolio">
+                        <li><i class="fas fa-briefcase"></i>Portfolio</li>
+                    </a>
+                    <a href="#contact">
+                        <li><i class="fas fa-envelope"></i>Contact</li>
+                    </a>
+
+                </ul>
+
+
+            </nav>
+        </div>
+        <!---------MOBILE VERSION---------->
         <section class="profile">
-            <h1 class="text-profile">Web <br>Developer</h1>
-            <h2 class="text-profile">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+            <h1 class="text-profile">Nilson <br>Diaz</h1>
+            <h2 class="text-profile">Looking for a web developer? <br> i'm a frontend developer</h2>
             <div class="photo-profile">
                 <img src="./Portafolio 6/Nilson.png" alt="Nilson Diaz">
-                <div class="icons">
-                    <span> <img src="./Portafolio 6/cib_linkedin-in.svg" alt=""> </span>
-                    <span> <img src="./Portafolio 6/ant-design_instagram-filled.svg" alt=""> </span>
-                    <span> <img src="./Portafolio 6/ant-design_twitter-outlined.svg" alt=""> </span>
-
-                </div>
             </div>
 
         </section>
 
         <div class="contact">
+            <div class="icons">
+                <span> <a href="https://www.linkedin.com/in/nilson-diaz-a44a9b205/"><img
+                            src="./Portafolio 6/cib_linkedin-in.svg" alt=""></a> </span>
+                <span> <a href="https://www.instagram.com/nilson_dm/"><img
+                            src="./Portafolio 6/ant-design_instagram-filled.svg" alt=""></a> </span>
+                <span> <a href="https://twitter.com/nilson_dm"> <img
+                            src="./Portafolio 6/ant-design_twitter-outlined.svg" alt=""> </a></span>
+
+            </div>
             <img src="./Portafolio 6/mail 3.svg" alt="">
             <h2>Contact me</h2>
         </div>
+
+        <!----------TABLET AND DESKTOP VERSION----------->
+        <section id="home" class="profile-big">
+            <div class="photo-profile-big">
+                <img src="./Portafolio 6/Nilson.png" alt="">
+            </div>
+
+            <div class="info">
+                <h1 class="text-profile-big">Nilson <br>Diaz</h1>
+                <h2 class="text-profile-big">Looking for a web developer? <br> i'm a frontend developer</h2>
+
+                <div class="icons-big">
+
+                    <span> <a href="https://www.linkedin.com/in/nilson-diaz-a44a9b205/"><img src="./Portafolio 6/cib_linkedin-in.svg" alt=""></a> </span>
+                    <span> <a href="https://www.instagram.com/nilson_dm/"><img src="./Portafolio 6/ant-design_instagram-filled.svg" alt=""></a> </span>
+                    <span> <a href="https://twitter.com/nilson_dm"> <img src="./Portafolio 6/ant-design_twitter-outlined.svg" alt=""> </a></span>
+
+                </div>
+
+                <div class="contact-big">
+                    <img src="./Portafolio 6/mail 3.svg" alt="">
+                    <h2>Contact me</h2>
+                </div>
+
+            </div>
+        </section>
+
     </header>
 
     <!--------------ABOUT ME----------------->
-    <section class="about-me">
-        <h2>About me</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ad animi veniam cum, quibusdam repellat
-            dicta officiis aut excepturi, nostrum, doloribus eius facere ipsum dolorem asperiores! Perferendis nesciunt
-            adipisci vitae.</p>
+    <section id="about" class="about-me">
+        <h2 class="title">About me</h2>
+        <p class="paragraph">I'm 21 years old and I'm from Dominican Republic. Currently i am studying web development
+            in a online bootcamp (Academlo), the bootcamp lasts five to ten months and at the end I wil be certified as
+            a web developer full stack. Also I'll learn Python, algorithms and data structures. I have knowlegde in
+            frontend technologies such as HTML, CSS and Javascript. </p>
 
     </section>
 
     <!--------------------MY SKILLS------------------->
-    <section class="my-skills">
-        <h2>My skills</h2>
+    <section id="skills" class="my-skills">
+        <h2 class="title">My skills</h2>
         <div class="skills-container">
             <div class="skills frontend">
-                <h3> <img src="./Portafolio 6/layer1.svg" width="20px" alt=""> Frontend develop</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempore, dolores quaerat at, eaque
-                    molestiae veritatis dolorum, suscipit assumenda deserunt vero. A ipsam vitae libero, quia quibusdam ab
-                    quis laudantium?</p>
+                <h3 class="sub-title"> <i class="fas fa-desktop"></i> Frontend develop</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempore, dolores
+                    quaerat at, eaque
+                    molestiae veritatis dolorum, suscipit assumenda deserunt vero. A ipsam vitae libero, quia quibusdam
+                    ab quis laudantium?</p>
             </div>
 
             <div class="skills backend">
-                <h3> <img src="./Portafolio 6/Group 95.svg" width="20px" alt=""> Backend develop</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempore, dolores quaerat at, eaque
-                    molestiae veritatis dolorum, suscipit assumenda deserunt vero. A ipsam vitae libero, quia quibusdam ab
+                <h3 class="sub-title"> <i class="fas fa-database"></i> Backend develop</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempore, dolores
+                    quaerat at, eaque
+                    molestiae veritatis dolorum, suscipit assumenda deserunt vero. A ipsam vitae libero, quia quibusdam
+                    ab
                     quis laudantium?</p>
 
-            </div><div class="skills mobile">
-                <h3> <img src="./Portafolio 6/smartphonetablet-115830_115799 1.svg" width="20px" alt=""> Mobile develop</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempore, dolores quaerat at, eaque
-                    molestiae veritatis dolorum, suscipit assumenda deserunt vero. A ipsam vitae libero, quia quibusdam ab
+            </div>
+            <div class="skills mobile">
+                <h3 class="sub-title"> <i class="fas fa-mobile-alt"></i> Mobile develop</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempore, dolores
+                    quaerat at, eaque
+                    molestiae veritatis dolorum, suscipit assumenda deserunt vero. A ipsam vitae libero, quia quibusdam
+                    ab
                     quis laudantium?</p>
             </div>
         </div>
     </section>
 
     <!--------------EXPERIENCE--------------->
-    <section class="experience">
-        <h2>Experience</h2>
-        <div class="experience-item amazon">
-            <img src="./Portafolio 6/ant-design_amazon-outlined.svg" alt="">
-            <div class="experience-text">
-                <h3>Amazon</h3>
-                <p>UI Designer</p>
-                <p>2015-2017</p>
+    <section id="experience" class="experience">
+        <h2 class="title">Experience</h2>
+        <div class="experience-container">
+            <div class="experience-item amazon">
+                <img src="./Portafolio 6/ant-design_amazon-outlined.svg" alt="">
+                <div class="experience-text">
+                    <h3>Amazon</h3>
+                    <p>UI Designer</p>
+                    <p>2015-2017</p>
+                </div>
+                <span>2 años</span>
             </div>
-            <span>2 años</span>
-        </div>
 
-        <div class="experience-item spotify">
-            <img src="./Portafolio 6/bi_spotify.svg" alt="">
-            <div class="experience-text">
-                <h3>Spotify</h3>
-                <p>Senior UX/UI</p>
-                <p>2017-2018</p>
+            <div class="experience-item spotify">
+                <img src="./Portafolio 6/bi_spotify.svg" alt="">
+                <div class="experience-text">
+                    <h3>Spotify</h3>
+                    <p>Senior UX/UI</p>
+                    <p>2017-2018</p>
+                </div>
+                <span>1 año</span>
             </div>
-            <span>1 año</span>
-        </div>
 
-        <div class="experience-item google">
-            <img src="./Portafolio 6/akar-icons_google-fill.svg" alt="">
-            <div class="experience-text">
-                <h3>Google</h3>
-                <p>Product <br> Designer</p>
-                <p>2018-Actualidad</p>
+            <div class="experience-item google">
+                <img src="./Portafolio 6/akar-icons_google-fill.svg" alt="">
+                <div class="experience-text">
+                    <h3>Google</h3>
+                    <p>Product <br> Designer</p>
+                    <p>2018-Actualidad</p>
+                </div>
+                <span>2 años</span>
             </div>
-            <span>2 años</span>
         </div>
     </section>
 
     <!-------------PORTFOLIO--------------->
-    <section class="portfolio">
-        <h2>Portfolio</h2>
+    <section id="portfolio" class="portfolio">
+        <h2 class="title">Portfolio</h2>
         <div class="portfolio-img">
             <div class="img-1">
                 <img src="./Portafolio 6/image 3.jpg" alt="">
@@ -118,7 +191,6 @@
 
             <div class="img-2">
                 <img src="./Portafolio 6/Rectangle 48.jpg" alt="">
-                <img src="./Portafolio 6/Rectangle 49.jpg" alt=""> 
             </div>
 
             <div class="img-3">
@@ -128,13 +200,13 @@
     </section>
 
     <!-------------FOOTER------------>
-    <footer>
-        <h2>Contact</h2>
+    <footer id="contact">
+        <h2 class="title">Contact</h2>
         <div class="footer">
             <div class="phone">
                 <span>
                     <img src="./Portafolio 6/phone 3.svg" alt="">
-                </span>    
+                </span>
                 <h3>Phone number</h3>
                 <p>829-616-7902</p>
             </div>
@@ -148,8 +220,11 @@
             </div>
         </div>
 
-        <h2 class="bye"> Hecho con &#x2764; en Academlo</h2>
+        <h2 class="bye made"> Hecho con &#x2764; en Academlo</h2>
+        <h2 class="bye"> By Nilson Diaz</h2>
     </footer>
+
+    <script src="./toggle.js"></script>
 </body>
 
 </html>
